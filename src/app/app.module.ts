@@ -5,17 +5,21 @@ import { HttpModule } from '@angular/http';
 import {routes} from './app.router';
 import { AppComponent } from './app.component';
 import {header} from './header/header.component';
-import {footer} from './footer/footer.component';
+import {connect} from './connect.service'
+
 
 import 'hammerjs';
-import {login} from './header/login/login.component';
-import {registration} from './header/registration/registration.component';
+import {login} from './login/login.component';
+import {registration} from './registration/registration.component';
 import {home} from './home/home.component';
-import {contactUs} from './header/contactUs/contactUs.component';
+import {contactUs} from './contactUs/contactUs.component';
+import { forgotPassword } from './forgotPassword/forgotPassword.component';
+import {ourStrategy} from './aboutus/ourStrategy.component';
+import {ourApproach} from './aboutus/ourApproach.component';
 
 @NgModule({
   declarations: [
-    AppComponent,header,footer,login,registration,home,contactUs
+    AppComponent,header,login,registration,home,contactUs,forgotPassword,ourStrategy,ourApproach
   ],
   imports: [
     BrowserModule,
